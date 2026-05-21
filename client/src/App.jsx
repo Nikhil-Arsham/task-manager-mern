@@ -56,7 +56,7 @@ function App() {
     try {
 
       await axios.post(
-        "http://localhost:5001/tasks",
+        "https://task-manager-mern-p2b9.onrender.com/tasks",
         formData
       );
 
@@ -82,7 +82,7 @@ function App() {
     try {
 
       await axios.delete(
-        `http://localhost:5001/tasks/${id}`
+        `https://task-manager-mern-p2b9.onrender.com/tasks/${id}`
       );
 
       fetchTasks();
